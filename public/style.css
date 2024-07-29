@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(172, 211, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-image: url("/images/puzzle-1721464_1280.jpg");
+  
+  
+}
+h1,h2{
+    text-align: center;
+}
+h1{
+    margin-right: 210px;
+}
+h2{
+    margin-right: 180px;
+}
+
+.input-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+.input-section input{
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: gray;
+    color:snow;
+}
+.name{
+    border-radius: 4px;
+    background-color: gray;
+    color:black;
+    width:120%;
+    height:60%;
+}
+.input-section input:hover{
+    border:3px solid red;
+}
+select#category_select {
+    background-color: grey;
+    border-radius: 3px;
+    color: aliceblue;
+    background-color: black;
+}
+select#info {
+    background-color: black;
+    color: red;
+}
+select#category_select:hover{
+    border:3px inset aliceblue;
+}
+
+select#info:hover{
+    border:3px inset aliceblue;
+}
+
+.input-section button{
+    padding: 5px 10px;
+    margin-right: 40px;
+   background-color: red;
+   color:black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input-section button:hover{
+background-color: green;
+color:black;
+border:2px inset aliceblue;
+}
+.expenses-list{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: black;
+    color:red;
+}
+th{
+    background-color: black;
+    color:red;
+}
+tfoot td{
+    font-weight: bold;
+    background-color: black;
+    color:red;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color:cornflowerblue;
+    color: black;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+video {
+  min-width: 70px;
+  height: 100px;
+    margin-left: -350px;
+    min-height: 100vh;
+    margin-top: 5px;
+    flex-basis: fit-content;
+    height: fit-content;
+    
+}

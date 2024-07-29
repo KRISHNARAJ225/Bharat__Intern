@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <form action="/add" method="POST">
+        <h1 style="color:mediumblue">Expense Tracker App</h1>
+        <div class="input-section">
+            <label for="category_select">Category:</label>
+            <select id="category_select" name="category_select" required>
+                <option value="Expense" id="name">Expense</option>
+                <option value="Income" id="name">Income</option>
+            </select>
+            <label for="amount_input">Amount:</label>
+            <input type="number" id="amount_input" name="amount_input" required>
+            <label for="info"  required>Info:</label>
+          <select name="info" id="info">
+            <option value="info" name="info" id="info">Salary</option>
+            <option value="info" name="info" id="info">Rent</option>
+            <option value="info" name="info" id="info">Grocery</option>
+            <option value="info" name="info" id="info">Shopping</option>
+            <option value="info" name="info" id="info">Bills</option>
+          </select>
+            <label for="date_input">Date:</label>
+            <input type="date" id="date_input" name="date_input">
+            <button id="add_btn" onclick="window.alert('Thank You For Using The App...🍂')">Add</button>
+        </div>
+    </form>
+
+    <div class="expenses-list">
+        <br>
+        <h2 style="color: mediumblue;">Expenditure and Income Data:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Info</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body">
+
+            </tbody>
+            <tfoot>
+                <td>Total:</td>
+                <td id="total-amount"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+        <thead>
+            <div  id="video">
+                <video src="/videos/3752548-hd_1920_1080_24fps.mp4" autoplay muted loop ></video>
+            </div>
+        </thead>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
